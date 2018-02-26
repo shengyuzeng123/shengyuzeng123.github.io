@@ -1,0 +1,334 @@
+@charset "UTF-8";
+#about .module-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-text {
+    width: 55%;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 4px;
+    color: #5d5d5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-text p {
+    padding: 20px 0;
+    /*margin-top: 24px;*/
+}
+
+#about-img {
+    width: 42%;
+    min-width: 200px;
+    /*overflow: hidden;*/
+    min-height: 1px;
+    position: relative;
+}
+
+#about-img-img {
+    width: 100%;
+    /*box-shadow: 0 10px 36px rgba(198, 198, 198, 0.91);*/
+    opacity: 0;
+    border-radius: 2px;
+    transition: opacity 0.8s;
+}
+
+/*#content section + section {*/
+/*margin-top: 200px;*/
+/*}*/
+#area .module-box {
+    padding: 1px !important;
+}
+
+#area-table {
+    position: relative;
+    width: 576px;
+    height: 600px;
+    margin: 10px auto 10px auto;
+    transition: all 1s ease;
+    transform: scale(0.9);
+    /*background-color: #dddddd;*/
+    font-size: 0;
+}
+
+#area-table > div {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.area-intro {
+    display: none;
+    color: purple;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    position: absolute;
+}
+
+.area-intro > div {
+    position: relative;
+    width: 300px;
+    height: 1px;
+}
+
+.area-intro p {
+    width: 240px;
+    position: absolute;
+    /*left: 0;*/
+    bottom: 0;
+}
+
+#tl {
+    width: 340px;
+    height: 283px;
+    left: 0;
+    top: 0;
+    background: url("../images/tl.png") no-repeat;
+}
+
+#tl .area-intro {
+    left: -254px;
+    top: 60px;
+}
+
+/*#tl:hover {*/
+/*left: -20px;*/
+/*top: -20px;*/
+/*background: url("../images/tlc.png") no-repeat;*/
+/*}*/
+
+#tr {
+    width: 280px;
+    height: 337px;
+    left: 295px;
+    top: 0;
+    background: url("../images/tr.png") no-repeat;
+}
+
+#tr > .area-intro {
+    top: 70px;
+    left: 240px;
+}
+
+#tr > .area-intro p {
+    text-align: right;
+}
+
+/*#tr:hover {*/
+/*left: 315px;*/
+/*top: -20px;*/
+/*background: url("../images/trc.png") no-repeat;*/
+/*}*/
+
+#bl {
+    width: 280px;
+    height: 337px;
+    left: 0;
+    top: 240px;
+    background: url("../images/bl.png") no-repeat;
+}
+
+#bl .area-intro {
+    right: 230px;
+    top: 210px;
+}
+
+/*#bl:hover {*/
+/*left: -20px;*/
+/*top: 260px;*/
+/*background: url("../images/blc.png") no-repeat;*/
+/*}*/
+
+#br {
+    width: 339px;
+    height: 280px;
+    top: 294px;
+    left: 233px;
+    background: url("../images/br.png") no-repeat;
+    /*background-size: 100%;*/
+}
+
+#br .area-intro {
+    text-align: right;
+    right: -247px;
+    top: 160px;
+}
+
+/*#br:hover {*/
+/*left: 253px;*/
+/*top: 314px;*/
+/*background: url("../images/brc.png") no-repeat;*/
+/*}*/
+
+#center {
+    position: relative;
+}
+
+/*米花观点*/
+#view-box {
+    padding: 1px;
+}
+
+#view-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 60px 0;
+    letter-spacing: 3px;
+    color: rgb(163, 64, 138);
+}
+
+/*#view-img {*/
+/*text-align: center;*/
+/*}*/
+#view-content {
+    text-align: center;
+}
+
+#view-content img {
+    transition: all 0.4s;
+}
+
+.view-module {
+    position: relative;
+    transition: all 0.4s;
+}
+
+.view-module:hover {
+    filter: brightness(1.1);
+    transform: scale(0.98);
+}
+
+.view-text {
+    transition: all 0.4s;
+}
+
+.view-module:hover .view-text {
+    transform: scale(1.04);
+}
+
+#view-bottom {
+    font-size: 0;
+}
+
+#view-top, #view-bottom > div {
+    display: inline-block;
+}
+
+.view-text-box {
+    position: absolute;
+    width: auto;
+    min-height: 100px;
+    /*background-color: grey;*/
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.view-text {
+    width: 210px;
+}
+
+.view-text-box > div, .view-text-box > canvas {
+    display: inline-block;
+}
+
+.toblock {
+    display: block !important;
+}
+
+/*我们的优势*/
+#advantage .module-box {
+    /*width: 45%;*/
+    padding: 1px;
+}
+
+#advantage-box {
+    margin: 40px auto;
+    color: #222222;
+    width: 620px;
+    /*padding-left: 4%;*/
+}
+
+#advantage-box > div {
+    margin-top: 60px;
+}
+
+#advantage-box > div > div {
+    text-align: center;
+}
+
+#advantage-box > div > p {
+    text-align: center;
+}
+
+#advantage-box img {
+    height: 3rem;
+}
+
+#advantage-box > div > div > p {
+    font-size: 3.4rem;
+    letter-spacing: 3px;
+    margin-top: 0.6rem;
+}
+
+#advantage-box > div > p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 2.8rem;
+}
+
+#advantage-box > div > p:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+/*合作品牌*/
+#coopmedialogo {
+    font-size: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-size: 2rem !important;
+    font-weight: 600;
+    color: #292929;
+    width: 33.33% !important;
+    letter-spacing: 4px;
+}
+
+#coopmedialogo > li {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.6%;
+    margin-top: 68px;
+}
+
+#coopmedialogo > li > img {
+    width: 50%;
+}
+
+.logo2small {
+    width: 26% !important;
+}
+
+@media only screen and (max-width: 1337px) {
+    #view-content {
+        transform: scale(0.8);
+    }
+
+    #area-table {
+        transform: scale(0.76);
+    }
+}

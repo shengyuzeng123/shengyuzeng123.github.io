@@ -9,13 +9,13 @@ define(["jquery"], function ($) {
     $(function () {
         // 链接跳转声明
         $(".href-intro").click(function () {
-            window.location.href = "http://www.meflourish.com/intro/";
+            window.location.href = "https://shengyuzeng123.github.io//intro/";
         });
         $(".href-media").click(function () {
-            window.location.href = "http://www.meflourish.com/media/";
+            window.location.href = "https://shengyuzeng123.github.io//media/";
         });
         $(".href-creative").click(function () {
-            window.location.href = "http://www.meflourish.com/creative/";
+            window.location.href = "https://shengyuzeng123.github.io//creative/";
         });
         $(".href-service").click(function () {
             window.location.href = "http://www.meflourish.com/service/";
