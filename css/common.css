@@ -1,0 +1,143 @@
+@charset "UTF-8";
+html {
+    font-size: 10px;
+
+}
+
+body {
+    font-family: 华文黑体;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+.href-index {
+    cursor: pointer;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/*--头部--*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to right, #b47af3, #6253ca); /* 标准的语法 */
+    z-index: 10;
+    /*border-radius: 10px;*/
+    box-shadow: 0 0 18px rgba(114, 77, 106, 0.76);
+
+}
+
+#head-nav li {
+    float: left;
+    display: inline-block;
+    margin-right: 2rem;
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+#head-nav li:hover .menu-text {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.82);
+    color: #fff9ea;
+}
+
+.active {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.82);
+    color: #fff9ea;
+}
+
+#head-nav > ul > li > a {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-text {
+    display: block;
+    color: #eceaef;
+    transition: all 0.6s;
+    /*letter-spacing: 1px;*/
+}
+
+.menu-text:nth-of-type(1) {
+    padding-bottom: 0.2rem;
+}
+
+#top {
+    width: 100%;
+    height: 200px;
+    background: white;
+    margin-top: 4rem;
+}
+
+#head-center {
+    width: 1024px;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.6s;
+}
+
+#logo-img {
+    display: inline-block;
+    width: 113px;
+}
+
+/*--页脚--*/
+footer {
+    position: relative;
+    width: 100%;
+    padding: 1px 0 1px 0;
+    background: linear-gradient(to right, #b47af3, #6253ca); /* 标准的语法 */
+}
+
+.about {
+    width: 60%;
+    margin: 30px auto 90px auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    color: #fcfdf7;
+}
+
+.about > div {
+    min-width: 33%;
+    overflow: hidden;
+}
+
+.about > div > h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+.swhz {
+    padding-left: 5%;
+}
+
+.contact-info-box > div {
+    margin-bottom: 0.8rem;
+}
+
+.gy {
+    border-left: 1px #dfdfdf solid;
+    border-right: 1px #dfdfdf solid;
+}
+
+.gzh {
+    text-align: center;
+}
+
+.gzh > img {
+    width: 100px;
+}

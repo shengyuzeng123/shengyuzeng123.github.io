@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+/*--宏观调控--*/
+body {
+    background-image: url("../img/bg.jpg");
+}
+
+/*--logo视频--*/
+#top {
+    width: 100%;
+    height: 200px;
+    background: white;
+    margin-top: 4rem;
+}
+
+#head-center {
+    width: 1024px;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.6s;
+}
+
+#logo-img {
+    display: inline-block;
+    width: 113px;
+}
+
+#top {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#top-video {
+    width: 100%;
+    z-index: -1;
+    margin-top: -100px;
+    /*height: 200px;*/
+}
+
+/*--主体--*/
+#content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content > section {
+    width: 1024px;
+    background: white;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border: 1px;
+    transition: all 0.6s ease;
+    position: relative;
+}
+
+#introduct {
+    box-shadow: 0 0 10px #dedede;
+    z-index: -1;
+}
+
+.more {
+    width: 70px;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0;
+}
+
+.title-box {
+    position: relative;
+    vertical-align: middle;
+    border-bottom: 3px solid #a485e6;
+    padding-bottom: 0.3rem;
+}
+
+.title-left {
+    font-size: 2.3rem;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.title-left li {
+    display: block;
+    color: #8687bf;
+}
+
+.title-left-zh {
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.title-left-en {
+    font-size: 1.2rem;
+}
+
+/*公司简介*/
+article {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+/*作品案例*/
+#project {
+    background: transparent !important;
+}
+
+.cases-box {
+    width: 100%;
+    margin-top: 1.6rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    position: relative;
+    width: 23%;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    transition: all 0.6s ease;
+    color: #858585;
+    margin-bottom: 1.6rem;
+    cursor: pointer;
+    float: left;
+    border-radius: 3px;
+}
+
+.video-box:hover .video-box-excludeInfo {
+    box-shadow: 0 0 18px rgba(133, 125, 161, 0.48);
+}
+
+.video-box-excludeInfo {
+    padding: 1.3rem 1rem 0 1rem;
+    transition: all 0.6s;
+    /*z-index: 6;*/
+}
+
+.video-title {
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.player-img {
+    position: absolute;
+    visibility: hidden;
+    width: 1.8rem;
+    z-index: 11;
+    right: 4%;
+    bottom: 23%;
+    opacity: 0.9;
+}
+
+.video-poster {
+    position: relative;
+    width: 100%;
+    /*background-color: #eeeeee;*/
+    overflow: hidden;
+    background-color: transparent;
+    filter: brightness(.6);
+    -webkit-filter: brightness(.6);
+    transition: all 0.6s;
+    height: 110px;
+}
+
+.video-img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 2px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.video-player {
+    position: absolute;
+    z-index: 9;
+}
+
+.video-src {
+    display: none;
+}
+
+.video-box:hover .video-poster {
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+.video-box:hover .video-info {
+    background-color: #d2e2e5;
+}
+
+.video-intro {
+    width: 100%;
+    padding: 1rem 0;
+    vertical-align: bottom;
+    /*height:60px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.video-info {
+    position: relative;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    background-color: #dadada;
+    text-indent: 1rem;
+    padding: 0.8rem 0;
+    text-shadow: 0.2px 0.2px 0.2px #f9f9f9;
+    transition: all 0.8s;
+    color: grey;
+}
+
+/*产品服务*/
+#service {
+}
+
+.list-box {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: 华文黑体;
+}
+
+.list-box > div {
+    min-width: 25%;
+    text-align: center;
+}
+
+.service-outer-box {
+    display: inline-block;
+}
+
+.list-title-service {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.list-title-service > div, ul, h3 {
+    text-align: left;
+}
+
+.list-title-service:before {
+    content: "▶";
+    position: absolute;
+    font-size: 1.1rem;
+    left: -1.8rem;
+    top: 0.1rem;
+}
+
+.yszz ul > li, .xxhd ul > li {
+    /*display:inline-block;*/
+    margin-bottom: 0.4rem;
+}
+
+.service-box > div {
+    margin-bottom: 0.6rem;
+}
+
+.service-box h3 {
+    margin-bottom: 0.4rem;
+}
+
+.service-box img {
+    width: 40px;
+}
+
+/*--弹出框--*/
+.pop-outer-box {
+    position: fixed;
+    width: 100%;
+    /*height: 700px;*/
+    top: 0;
+    background: rgba(23, 23, 23, 0.65);
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    z-index: 16;
+}
+
+.pop-box {
+    position: relative;
+    width: 760px;
+    /*height: 460px;*/
+    background: white;
+    border-radius: 2px;
+    visibility: hidden;
+    animation-duration: 0.6s !important;
+    padding: 30px 6px 6px 6px;
+    box-shadow: 0 0 30px rgba(12, 12, 12, 0.89);
+    margin: 0 auto;
+    /*margin-top: 100px !important;*/
+}
+
+#video {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    z-index: 12;
+}
+
+.pop-box-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    border-radius: 50%;
+    background: #e87c71;
+    top: 5px;
+    right: 5px;
+    box-shadow: 0.2px 1px 2px rgba(158, 158, 158, 0.91);
+    text-align: center;
+    color: white;
+    text-shadow: 0.2px 0.2px 0.1px #363636;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.pop-video-title {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 0.6rem;
+}
+
+/*--设备检查--*/
+/*中屏幕、ipad*/
+@media screen and (max-width: 1024px) {
+    #head-center {
+        width: 768px;
+    }
+
+    #content > section {
+        width: 768px;
+    }
+
+    #logo-img {
+        margin-left: 1rem;
+    }
+
+    .video-box-excludeInfo {
+        padding: 0.8rem 0.6rem 0 0.6rem;
+    }
+}
+
+/*移动手机*/
+@media screen and (max-width: 416px) {
+    /*--头部--*/
+    #head-center {
+        width: 100%;
+    }
+
+    #head-nav li {
+        margin-right: 1.4rem;
+    }
+
+    /*--主体--*/
+    #content > section {
+        width: 96%;
+        padding: 1.6rem 1rem 1rem 1rem;
+    }
+
+    .about {
+        width: 100%;
+        margin: 16px auto 16px auto;
+    }
+
+    .gzh > img {
+        width: 50%;
+    }
+
+    .title-left-zh {
+        font-size: 1.8rem !important;
+    }
+
+    .list-box h2 {
+        font-size: 1.3rem;
+    }
+
+    .video-poster {
+        height: 80px;
+    }
+
+    /*产品服务*/
+    .list-title-service {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .list-title-service:before {
+        content: "☞";
+        position: absolute;
+        font-size: 1.1rem;
+        left: -1.8rem;
+        top: 0.1rem;
+    }
+
+    /*视频盒子*/
+    .pop-box {
+        width: 96%;
+
+    }
+
+    .video-box {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        border-radius: 4px;
+        /*height: 10rem;*/
+        /*box-shadow: 0 0 1px #9c9c9c;*/
+        margin-top: 0.6rem;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    /*以下是作品案例在移动端的第二个排版方案*/
+    /*.video-box:hover {*/
+    /*box-shadow: 0 0 10px #9c9c9c;*/
+    /*}*/
+    /*.video-box:hover .video-info {*/
+    /*background: transparent;*/
+    /*}*/
+    /*.video-box-excludeInfo {*/
+    /*padding: 0;*/
+    /*}*/
+    /*.video-title {*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*z-index: 2;*/
+    /*top: 1rem;*/
+    /*left: 1rem;*/
+    /*color: rgba(255, 247, 229, 0.95);*/
+    /*font-size: 1.3rem;*/
+    /*text-shadow: 0.2px 0.2px 0.2px #1c1c1c;*/
+    /*font-weight: 600;*/
+    /*}*/
+    /*.video-poster {*/
+    /*width: 100%;*/
+    /*!*border-radius: 6px;*!*/
+    /*}*/
+    /*.video-intro {*/
+    /*display: none;*/
+    /*}*/
+    /*.video-info {*/
+    /*position: absolute;*/
+    /*background-color: transparent;*/
+    /*z-index: 3;*/
+    /*bottom: 1rem;*/
+    /*left: 1rem;*/
+    /*text-shadow: 0.2px 0.2px 0.2px #1c1c1c;*/
+    /*text-indent: 0;*/
+    /*padding: 0;*/
+    /*color: rgba(229, 229, 229, 0.91);*/
+    /*letter-spacing: 1px;*/
+    /*}*/
+    /*.video-img {*/
+    /*margin-top: -30px;*/
+    /*}*/
+    /*.player-img {*/
+    /*visibility: visible;*/
+    /*position: absolute;*/
+    /*z-index: 6;*/
+    /*right: 1rem;*/
+    /*bottom: 1rem;*/
+    /*}*/
+}
