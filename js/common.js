@@ -9,31 +9,31 @@ define(["jquery"], function ($) {
     $(function () {
         // 链接跳转声明
         $(".href-intro").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io//intro/";
+            window.location.href = "https://shengyuzeng123.github.io/intro/";
         });
         $(".href-media").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io//media/";
+            window.location.href = "https://shengyuzeng123.github.io/media/";
         });
         $(".href-creative").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io//creative/";
+            window.location.href = "https://shengyuzeng123.github.io/creative/";
         });
         $(".href-service").click(function () {
-            window.location.href = "http://www.meflourish.com/service/";
+            window.location.href = "https://shengyuzeng123.github.io/service/";
         });
         $(".href-case").click(function () {
-            window.location.href = "http://www.meflourish.com/cases/";
+            window.location.href = "https://shengyuzeng123.github.io/cases/";
         });
         $(".href-index").click(function () {
-            window.location.href = "http://www.meflourish.com/";
+            window.location.href = "https://shengyuzeng123.github.io/";
         });
         $(".href-contact").click(function () {
-            window.location.href = "http://www.meflourish.com/contact/";
+            window.location.href = "https://shengyuzeng123.github.io/contact/";
         });
         $(".href-job").click(function () {
-            window.location.href = "http://www.meflourish.com/recruit/";
+            window.location.href = "https://shengyuzeng123.github.io/recruit/";
         });
         $(".href-news").click(function () {
-            window.location.href = "http://www.meflourish.com/news/";
+            window.location.href = "https://shengyuzeng123.github.io/news/";
         });
         // 常规设置
         $("img").attr("draggable", "false");
