@@ -1,0 +1,165 @@
+@charset "UTF-8";
+#video-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+.getpop {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 33.333%;
+    height: 300px;
+    /*background-color: #9cc9cb;*/
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease-out;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.getpop:nth-of-type(3n+2) {
+    padding: 0 1px;
+}
+
+.getpop:nth-of-type(3n+1) {
+    padding-right: 2px;
+}
+
+.getpop:nth-of-type(3n+3) {
+    padding-left: 2px;
+}
+
+.getpop:hover .poster {
+    filter: grayscale(20%) brightness(0.5);
+    transform: scale(1.02);
+}
+
+.video-box .master:after {
+    content: url("../../img/video.png");
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.article-box .master:after {
+    content: url("../../img/article.png");
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.poster-box {
+    position: relative;
+    background-color: rgba(237, 233, 237, 0.84);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.poster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.getpop:active {
+    transform: scale(0.96);
+}
+
+.loading-text {
+    display: table-cell;
+    line-height: 180px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+
+.master {
+    box-sizing: border-box;
+    /*padding: 1rem 0 0 2rem;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #c274b6;*/
+    z-index: 4;
+    transition: all 0.4s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 28px rgba(255, 255, 255, 0.94);
+}
+
+.master-tag {
+    margin-top: 1rem;
+    color: rgba(223, 194, 222, 0.73);
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.getpop:hover .master {
+    opacity: 0.95;
+}
+
+.player, .article {
+    position: absolute;
+    width: 30px;
+    right: 16px;
+    bottom: 12px;
+    transition: all 0.4s;
+}
+
+#loader {
+    animation: loader 1.4s infinite linear;
+}
+
+/*更多按钮*/
+#morevideo-box {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1px;
+    letter-spacing: 1px;
+    color: #5e5e5e;
+}
+
+#morevideo-box > p {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.morevideo-icon {
+    cursor: pointer;
+    width: 30px;
+    transition: transform 0.2s;
+}
+
+.morevideo-icon:hover {
+    transform: rotate(90deg);
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
