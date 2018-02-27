@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#about .module-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-text {
+    width: 45%;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 4px;
+    color: #5d5d5d;
+}
+
+#about-img {
+    width: 45%;
+    /*overflow: hidden;*/
+    min-height: 1px;
+    position: relative;
+}
+#about-img-img{
+    width: 100%;
+    box-shadow: 0.2rem 0.4rem 0.4rem #525252;
+    opacity: 0;
+}
+
+/*#content section + section {*/
+    /*margin-top: 200px;*/
+/*}*/
+#area-table{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    transition: all 1s ease;
+    transform: scale(0);
+}

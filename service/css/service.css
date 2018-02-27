@@ -1,0 +1,243 @@
+@charset "UTF-8";
+#service-plate {
+    font-size: 0;
+    width: 60%;
+    margin-bottom: 2rem;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#service-plate > ul {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#service-plate-left {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+#service-plate-left h4 {
+    margin-top: 60px;
+    margin-bottom: 38px;
+    font-size: 4.2rem;
+    color: rgba(68, 68, 68, 0.83);
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+#service-plate-left h3 {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+}
+
+#service-plate-left > li {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    font-size: 4rem;
+    opacity: 0;
+    padding: 4rem 2rem 0 6rem;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+}
+
+#service-plate-left p {
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+#service-plate-right {
+    font-size: 0;
+    width: 40%;
+    height: 100%;
+    background-color: dodgerblue;
+}
+
+#service-plate-right > li {
+    box-sizing: border-box;
+    border-left: 2px solid white;
+    font-size: 2rem;
+    color: white;
+    width: 20%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgb(183, 79, 159);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service-plate-right > li > span {
+    line-height: 2.6rem;
+}
+
+/*#service-plate-right > li:hover {*/
+    /*background-color: white;*/
+    /*color: #1b1b1b;*/
+/*}*/
+
+/*合作流程*/
+#coopeline .module-box {
+    padding: 1px;
+}
+
+#line {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#line ul {
+    display: inline-block;
+    border-left: 2px dashed rgba(226, 135, 211, 0.91);
+}
+
+#line ul li {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(181, 101, 161);
+    border-radius: 50%;
+    margin-left: -6px;
+    cursor: pointer;
+    transition: filter 0.4s;
+}
+
+#line ul li + li {
+    margin-top: 160px;
+}
+
+#line ul li:nth-of-type(odd):before {
+    content: '◀';
+    position: absolute;
+    right: 46px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    top: -4px;
+    color: rgb(181, 101, 161);
+}
+
+#line ul li:nth-of-type(even):after {
+    content: '▶';
+    position: absolute;
+    left: 46px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    top: -4px;
+    color: rgb(181, 101, 161);
+}
+
+#line ul li:nth-of-type(odd) .timeplate {
+    position: absolute;
+    width: 240px;
+    /*background-color: #d1d1d1;*/
+    right: 100px;
+    top: -30px;
+    text-align: right;
+
+}
+
+#line ul li:nth-of-type(even) .timeplate {
+    position: absolute;
+    width: 300px;
+    left: 100px;
+    top: -30px;
+    text-align: left;
+
+}
+
+#line ul li:hover {
+    filter: brightness(1.16);
+}
+
+.timeplate > div {
+    display: flex;
+    align-items: center;
+}
+
+.timeplate > div > div {
+    letter-spacing: 2px;
+    text-align: left;
+    display: inline-block;
+}
+
+.progress {
+    color: rgb(181, 101, 161);
+    /*padding: 1rem;*/
+    text-align: center !important;
+    border: 2px solid rgb(181, 101, 161);
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+}
+
+.progress-text {
+    vertical-align: center;
+    margin-left: 1rem;
+}
+
+.progress-text > p:first-child {
+    /*font-weight: 600;*/
+    color: rgb(181, 101, 161);
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+.progress-text > p:nth-of-type(2) {
+    color: #1d1d1d;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+.circle {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #a85ea4;
+}
+
+.circle1 {
+    width: 50px;
+    height: 50px;
+    left: -20px;
+    top: -20px;
+    animation: circle 2s infinite ease-out;
+}
+
+.circle2 {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    top: -15px;
+    animation: circle 2s infinite ease-out 0.4s;
+}
+
+#line ul li:hover .circle {
+    transform: scale(1);
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}

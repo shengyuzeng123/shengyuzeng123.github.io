@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#contact .module-box {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-intro-box {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2.4rem;
+}
+
+#contact-intro-box > div {
+    display: inline-block;
+    margin-top: 100px;
+}
+#contact-intro-box > div>p{
+    margin-bottom: 1rem;
+}
+#map {
+    border-radius: 6px;
+    box-shadow: 0 6px 40px rgba(207, 207, 207, 0.87);
+}

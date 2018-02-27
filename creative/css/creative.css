@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*重写public.css公共部分*/
+.more-box {
+    margin-top: 60px;
+}
+
+/*内容创意主要模块*/
+#creative .module-box {
+    /*padding: 30px 16px 0 16px;*/
+    letter-spacing: 2px;
+    width: 1060px;
+}
+
+#creative-box {
+    width: 100%;
+    /*background-color: #e0e5e4;*/
+    /*box-shadow: 0 1rem 1.4rem #cfcfcf;*/
+}
+
+.creative-wrapper {
+    font-size: 3.6rem;
+}
+
+.creative-wrapper > div {
+    /*margin-bottom: 40px;*/
+    color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s;
+    width: 1060px;
+    padding: 28px 0;
+}
+
+.creative-wrapper > div:nth-of-type(odd) {
+    background-color: #262626;
+}
+
+.creative-wrapper > div:nth-of-type(even) {
+    background-color: #B74F9F;
+}
+
+.creative-wrapper > div:hover {
+    filter: brightness(1.1);
+}
+
+.creative-ex-intro {
+    float: left;
+    /*max-width: 68%;*/
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    padding: 20px 20px 30px 10px;
+}
+
+.creative-wrapper > div:nth-of-type(even) .creative-ex-intro {
+    width: 680px;
+    text-align: right;
+    margin-right: 20px;
+    float: right;
+    color: white !important;
+}
+
+.creative-wrapper > div:nth-of-type(odd) .creative-ex-intro {
+    width: 680px !important;
+}
+
+.creative-ex-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.title-img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.title-img > img {
+    /*padding-top: 25px;*/
+    width: 60px;
+    line-height: 80px;
+}
+
+.video-box:nth-of-type(odd) .title-img {
+    float: left;
+    /*background-color: rgb(183, 57, 155);*/
+    margin-left: 80px;
+}
+
+.video-box:nth-of-type(even) .title-img {
+    float: right;
+    margin-right: 80px;
+    /*background-color: rgb(183, 57, 155);*/
+}
+
+/*硬件实力*/
+#machine .module-box {
+    /*padding: 4rem;*/
+}
+
+#machine-box {
+    font-size: 0;
+    padding: 4rem;
+}
+
+#machine-img {
+    margin: 60px 0 0 0;
+    width: 100%;
+    /*box-shadow: -6px 10px 38px rgba(191, 191, 191, 0.93);*/
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#machine-img > div {
+    display: inline-block;
+}
+
+#machine-img img {
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#machine-intro {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 2.2rem;
+    letter-spacing: 2px;
+    color: #1e1e1e;
+}
+
+#machine-intro p {
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
