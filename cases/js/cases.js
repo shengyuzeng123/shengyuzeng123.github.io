@@ -48,7 +48,7 @@ require(["jquery", "common", "imagesLoaded"], function ($, common) {
                             + '<div class="poster-box">'
                             + '<img class="poster" src="video/poster/' + data[i].poster + '" alt="">'
                             + '</div>'
-                            + '<span class="video-src">' + data[i].caseType + '/' + data[i].url + '</span>'
+                            + '<span class="video-src">' + data[i].url + '</span>'
                             + '</div>';
                         $("#video-outer-box").append(tpl);
                     }
