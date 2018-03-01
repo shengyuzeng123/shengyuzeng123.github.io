@@ -6,10 +6,14 @@
 }
 
 #title-video {
+    position: relative;
     width: 100% !important;
     object-fit: cover;
 }
-
+#title-video video{
+    margin-top: -300px;
+    width: 100%;
+}
 #video-box-master {
     display: flex;
     justify-content: center;
@@ -18,6 +22,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
+    z-index: 2;
 }
 
 #video-box-master li {
@@ -38,9 +43,9 @@
 #godown {
     width: 100%;
     position: absolute;
-    padding: 1rem 0;
-    bottom: 0;
-    color: #e4e4e4;
+    /*padding: 1rem 0;*/
+    /*bottom: 32px;*/
+    color: #acacac;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
@@ -242,13 +247,13 @@
 
 @keyframes godown {
     0% {
-        bottom: 0
+        bottom: 36px
     }
     50% {
-        bottom: -4px
+        bottom: 32px
     }
     100% {
-        bottom: 0
+        bottom: 36px
     }
 }
 
@@ -406,32 +411,68 @@
     margin-bottom: 40px;
 }
 
-/*合作商家*/
-.cooperation {
-    padding: 1px 0 80px 0;
-}
+/*!*合作商家*!*/
+/*.cooperation {*/
+/*padding: 1px 0 80px 0;*/
+/*}*/
 
-.swiper-logo {
-    width: 1400px;
-}
+/*.swiper-logo {*/
+/*width: 1400px;*/
+/*}*/
 
-.swiper-logo .swiper-slide {
-    width: 20%;
-    height: 100px;
+/*.swiper-logo .swiper-slide {*/
+/*width: 20%;*/
+/*height: 100px;*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*}*/
+
+/*.swiper-logo .swiper-wrapper img {*/
+/*-webkit-filter: grayscale(100%);*/
+/*-moz-filter: grayscale(100%);*/
+/*-o-filter: grayscale(100%);*/
+/*width: 50%;*/
+/*}*/
+
+/*.swiper-logo .logo2small {*/
+/*width: 30% !important;*/
+/*}*/
+
+/*合作品牌*/
+#coopmedialogo {
+    width: 80%;
+    font-size: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin: 0 auto;
 }
 
-.swiper-logo .swiper-wrapper img {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+.text {
+    font-size: 2rem !important;
+    font-weight: 600;
+    color: #292929;
+    width: 33.33% !important;
+    letter-spacing: 4px;
+}
+
+#coopmedialogo > li {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    margin-top: 68px;
+}
+
+#coopmedialogo > li > img {
     width: 50%;
 }
 
-.swiper-logo .logo2small {
-    width: 30% !important;
+.logo2small {
+    width: 26% !important;
 }
 
 /*.tocolorful{*/
@@ -442,10 +483,12 @@
     #cases-box .video-box {
         height: 240px;
     }
-    #news-box{
+
+    #news-box {
         width: 960px;
     }
-    .newswrap{
+
+    .newswrap {
         height: 240px;
     }
 }
