@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/news.css">
     <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/video-js.css">
-    <title>公司动态</title>
+    <title>米花动态</title>
 </head>
 <body class="subsite">
 <!--头部-->
@@ -30,9 +30,33 @@
     </nav>
 </header>
 <div id="content">
-    <div id="subsite-title">
-        <p id="slogan">公司动态</p>
+    <div id="subsite-title" style="height: auto">
+        <p id="slogan">米花动态</p>
         <p class="subtitle">公司动态展示</p>
+    </div>
+    <div id="news-wrapper">
+        <!--<div class="news-item clearfix">-->
+            <!--<div class="news-time-box">-->
+                <!--<div class="news-time">-->
+                    <!--<p class="news-month">2月</p>-->
+                    <!--<p class="news-day">13</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="news-msg-box">-->
+                <!--<p class="news-tag">艺教头条</p>-->
+                <!--<p class="news-title article-box getpop">浙江少儿春晚小主持风采展示-->
+                    <!--<span class="video-src">http://www.meflourish.com/article/chunwan.png</span>-->
+                <!--</p>-->
+                <!--<p class="news-intro">2018年，浙江少儿春晚即将演出，400多场演出，40多个小时的精心准备，如果你的孩子也在里面，请为他加油哟...</p>-->
+            <!--</div>-->
+            <!--<div class="news-img-box">-->
+                <!--<img src="../article/img/chunwan.png" alt="">-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div id="morevideo-box">
+        <p><img class="morevideo-icon" src="../img/add.png" alt=""></p>
+        <p><span>更多案例</span></p>
     </div>
 </div>
 
@@ -48,6 +72,7 @@
                     <li><a class="href-creative">内容创意</a></li>
                     <li><a class="href-service">业务服务</a></li>
                     <li><a class="href-case">作品案例</a></li>
+                    <li><a class="href-news">米花动态</a></li>
                     <li><a class="href-contact">联系我们</a></li>
                     <li><a class="href-job">人才招聘</a></li>
                 </ul>
@@ -69,9 +94,16 @@
 <div class="pop-outer-box">
     <div class="pop-box animated">
         <a class="pop-box-close">×</a>
+        <p class="pop-video-title"></p>
         <div class="pop-video">
-            <video id="video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster=""><source src="" type='video/mp4'/></video>
+            <video id="video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="">
+                <source src="" type='video/mp4'/>
+            </video>
         </div>
+        <div class="pop-article">
+            <img class="article-text" src="" alt="">
+        </div>
+        <div class="pop-totop"><img src="http://www.meflourish.com/img/totop.png" alt=""></div>
     </div>
 </div>
 <script src="../js/video.min.js"></script>
