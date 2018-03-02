@@ -5,35 +5,37 @@
 * @方法：
 */
 define(["jquery"], function ($) {
+    //增加小标签
+    $("head").append('<link rel="Shortcut Icon" href="http://www.meflourish.com/img/icon.png" type="image/x-icon">');
     //公共配置
     $(function () {
         // 链接跳转声明
         $(".href-intro").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/intro/";
+            window.location.href = "http://www.meflourish.com/intro/";
         });
         $(".href-media").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/media/";
+            window.location.href = "http://www.meflourish.com/media/";
         });
         $(".href-creative").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/creative/";
+            window.location.href = "http://www.meflourish.com/creative/";
         });
         $(".href-service").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/service/";
+            window.location.href = "http://www.meflourish.com/service/";
         });
         $(".href-case").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/cases/";
+            window.location.href = "http://www.meflourish.com/cases/";
         });
         $(".href-index").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/";
+            window.location.href = "http://www.meflourish.com/";
         });
         $(".href-contact").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/contact/";
+            window.location.href = "http://www.meflourish.com/contact/";
         });
         $(".href-job").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/recruit/";
+            window.location.href = "http://www.meflourish.com/recruit/";
         });
         $(".href-news").click(function () {
-            window.location.href = "https://shengyuzeng123.github.io/news/";
+            window.location.href = "http://www.meflourish.com/news/";
         });
         // 常规设置
         $("img").attr("draggable", "false");
@@ -55,53 +57,53 @@ define(["jquery"], function ($) {
         });
 
         //视频播放
-        $(".video-box").parent().on("click", ".video-box", function () {
-            $(".pop-box").css("margin-top", $(window).height() * 0.2 + "px");
-            $(".pop-article").hide();
-            $(".pop-video").show();
-            var video_src = $(this).find(".video-src").text();
-            $(".pop-box-close").on("click", function () {
-                document.getElementById("video_html5_api").pause();
-                $(".pop-box").removeClass("fadeInUp").addClass("fadeOut");
-                setTimeout(function () {
-                    $(".pop-outer-box").fadeOut(200);
-                }, 100);
-            });
-
-            videojs("#video", {}, function () {
-                var myPlayer = this;
-                // myPlayer.poster(posterSrc); //插入缩略图
-                myPlayer.src(video_src);//插入视频地址
-            })
-        });
+        // $(".video-box").parent().on("click", ".video-box", function () {
+        //     $(".pop-box").css("margin-top", $(window).height() * 0.2 + "px");
+        //     $(".pop-article").hide();
+        //     $(".pop-video").show();
+        //     var video_src = $(this).find(".video-src").text();
+        //     $(".pop-box-close").on("click", function () {
+        //         document.getElementById("video_html5_api").pause();
+        //         $(".pop-box").removeClass("fadeInUp").addClass("fadeOut");
+        //         setTimeout(function () {
+        //             $(".pop-outer-box").fadeOut(200);
+        //         }, 100);
+        //     });
+        //
+        //     videojs("#video", {}, function () {
+        //         var myPlayer = this;
+        //         // myPlayer.poster(posterSrc); //插入缩略图
+        //         myPlayer.src(video_src);//插入视频地址
+        //     })
+        // });
 
         // 文章阅读
-        $(".article-box").parent().on("click", ".article-box", function () {
-            $(".pop-box").css({"margin-top": "40px", "width": "860px"});
-            $(".pop-article").height($(window).height() * 0.9);
-            $(".pop-article").show();
-            $(".pop-video").hide();
-            pop_box_close.on("click", function () {
-                pop_box.removeClass("fadeInUp").addClass("fadeOut");
-                setTimeout(function () {
-                    pop_outer_box.fadeOut(200);
-                }, 100);
-            });
-            var article_src = $(this).find(".video-src").text();
-            $(".pop-article").find(".article-text").prop("src", "").prop("src", article_src);
-        });
-    });
+        // $(".article-box").parent().on("click", ".article-box", function () {
+        //     $(".pop-box").css({"margin-top": "40px", "width": "860px"});
+        //     $(".pop-article").height($(window).height() * 0.9);
+        //     $(".pop-article").show();
+        //     $(".pop-video").hide();
+        //     pop_box_close.on("click", function () {
+        //         pop_box.removeClass("fadeInUp").addClass("fadeOut");
+        //         setTimeout(function () {
+        //             pop_outer_box.fadeOut(200);
+        //         }, 100);
+        //     });
+        //     var article_src = $(this).find(".video-src").text();
+        //     $(".pop-article").find(".article-text").prop("src", "").prop("src", article_src);
+        // });
 
-    //图文弹窗回到顶部
-    $(".pop-article").scroll(function () {
-        if ($(this).scrollTop() > 1600) {
-            $(".pop-totop").fadeIn();
-        } else {
-            $(".pop-totop").fadeOut();
-        }
-    });
-    $(".pop-totop").click(function () {
-        $(".pop-article").scrollTop(0);
+        //图文弹窗回到顶部
+        $(".pop-article").scroll(function () {
+            if ($(this).scrollTop() > 1600) {
+                $(".pop-totop").fadeIn();
+            } else {
+                $(".pop-totop").fadeOut();
+            }
+        });
+        $(".pop-totop").click(function () {
+            $(".pop-article").scrollTop(0);
+        });
     });
 
     //每个页面需要重新加载的方法
@@ -140,10 +142,12 @@ define(["jquery"], function ($) {
             });
         },
         reloadvideo: function () {
+            var myPlayer = videojs("#video");
             // 弹出框声明
             var pop_outer_box = $(".pop-outer-box"), //弹出框外层盒子
                 pop_box_close = $(".pop-box-close"), //弹出框关闭按钮
                 pop_box = $(".pop-box");//弹出框内层
+            // pop_video = $(".pop-video");//弹出框内层
 
             // 弹出框
             // pop_outer_box.hide();
@@ -159,23 +163,33 @@ define(["jquery"], function ($) {
 
             //视频播放
             $(".video-box").parent().on("click", ".video-box", function () {
+                var that = $(this);
                 $(".pop-box").css("margin-top", $(window).height() * 0.2 + "px");
                 $(".pop-article").hide();
                 $(".pop-video").show();
                 var video_src = $(this).find(".video-src").text();
+                $(".pop-video-title").text(that.find(".master-name").html());
                 $(".pop-box-close").on("click", function () {
-                    document.getElementById("video_html5_api").pause();
+                    myPlayer.pause();
                     $(".pop-box").removeClass("fadeInUp").addClass("fadeOut");
+                    $(".replay-img").css("transform", "scale(0) rotate(0)");
                     setTimeout(function () {
                         $(".pop-outer-box").fadeOut(200);
                     }, 100);
                 });
-
-                videojs("#video", {}, function () {
-                    var myPlayer = this;
-                    // myPlayer.poster(posterSrc); //插入缩略图
-                    myPlayer.src(video_src);//插入视频地址
-                })
+                myPlayer.src(video_src);//插入视频地址
+                var ifended = setInterval(function () {
+                    if (myPlayer.ended()) {
+                        $(".replay-img").css("transform", "scale(1) rotate(-360deg)");
+                        // clearInterval(ifended);
+                    } else {
+                        $(".replay-img").css("transform", "scale(0) rotate(0)");
+                    }
+                }, 1000);
+                $(".replay-img").click(function () {
+                    $(".replay-img").css("transform", "scale(0) rotate(0)");
+                    myPlayer.play();
+                });
             });
 
             // 文章阅读

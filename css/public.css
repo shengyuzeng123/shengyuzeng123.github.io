@@ -358,11 +358,29 @@ footer > div {
     color: #d25055;
 }
 
+.pop-video {
+    position: relative;
+}
+
+.pop-video:hover .pop-video-title {
+    opacity: 1;
+}
+
 .pop-video-title {
-    display: inline-block;
     position: absolute;
-    top: 1rem;
-    left: 0.6rem;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    padding: 1.4rem 0 2.6rem 0;
+    background: linear-gradient(black, rgba(255, 255, 255, 0));
+    text-indent: 2rem;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.94);
+    line-height: 20px;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+    opacity: 0;
 }
 
 .pop-video-intro {
@@ -376,6 +394,22 @@ footer > div {
     display: none;
 }
 
+.replay-img {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    z-index: 99;
+    left: calc(50% - 23px);
+    top: calc(50% - 23px);
+    transform: scale(0) rotate(0);
+    transition: all 1s ease;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.replay-img:hover {
+    opacity: 1;
+}
 /*文章控件*/
 .pop-article {
     position: relative;
@@ -398,9 +432,11 @@ footer > div {
     opacity: 0.4;
     transition: all 0.2s;
 }
-.pop-totop:hover{
+
+.pop-totop:hover {
     opacity: 0.9;
 }
+
 .pop-totop > img {
     width: 100%;
 }

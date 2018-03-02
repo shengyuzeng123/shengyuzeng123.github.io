@@ -42,11 +42,11 @@ require(["jquery", "common", "imagesLoaded"], function ($, common) {
                     for (var i = 0; i < data.length; i++) {
                         var tpl = '<div class="' + data[i].caseType + '-box getpop animated fadeIn">'
                             + '<div class="master">'
-                            + '<p class="master-intro">' + data[i].caseName + '</p>'
+                            + '<p class="master-name">' + data[i].caseName + '</p>'
                             + '<p class="master-tag">' + data[i].caseTag + '</p>'
                             + '</div>'
                             + '<div class="poster-box">'
-                            + '<img class="poster" src="video/poster/' + data[i].poster + '" alt="">'
+                            + '<img class="poster" src="http://www.meflourish.com/video/cases/poster/' + data[i].poster + '" alt="">'
                             + '</div>'
                             + '<span class="video-src">' + data[i].url + '</span>'
                             + '</div>';
