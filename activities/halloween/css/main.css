@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+    font-family: 微软雅黑;
+}
+
+img:not(.haibao){
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background: #4d3995;
+    text-align: center;
+}
+
+body {
+    background-color: #4d3995;
+}
+
+/*头部*/
+#topImg {
+    width: 100%;
+}
+
+#logoImg {
+    position: relative;
+    display: inline-block;
+    margin-top: 60px;
+    width: 90%;
+    z-index: 2;
+}
+
+#lamaImg {
+    position: absolute;
+    width: 30%;
+    right: 30px;
+    top: 0;
+    z-index: 1;
+    animation-delay: 0.3s;
+}
+
+/*主体*/
+#content {
+    width: 100%;
+    background: url("../img/bg.jpg");
+    background-size: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble {
+    position: relative;
+    width: 80%;
+    color: #ffa229;
+}
+
+.bubble:nth-of-type(odd) {
+    margin-top: 0.6rem;
+}
+
+.bubble:nth-of-type(even) {
+    width: 86%;
+    margin-left: 2rem;
+}
+
+.bubble > .cell {
+    width: 100%;
+}
+
+.bubble > .cell-1 {
+    vertical-align: bottom !important;
+}
+
+.bubble > .cell-3 {
+    vertical-align: top !important;
+}
+.bubble > .cell-2{
+    padding:2px;
+}
+
+.bubble-title {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    color: #ff7233;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.bubble:nth-of-type(odd) > .bubble-title {
+    top: 4.7rem;
+    left: 2rem;
+}
+
+.bubble:nth-of-type(even) > .bubble-title {
+    top: 5.2rem;
+    right: 6rem;
+}
+
+.bubble:nth-of-type(odd) > .cell-2 {
+    /*width: 100%;*/
+    /*background: url("../img/qipao-l_02.png");*/
+    /*background-size: 100%;*/
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bubble:nth-of-type(even) > .cell-2 {
+    /*width: 100%;*/
+    /*background: url("../img/qipao-r_02.png");*/
+    /*background-size: 100%;*/
+    padding-left: 7%;
+    padding-right: 16%;
+}
+
+.btn {
+    display: inline-block;
+    position: absolute;
+    width: 4.5rem;
+    height: 2rem;
+    background-color: #ff8833;
+    padding: 0 8px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 2rem;
+    color: #594153;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:active {
+    background-color: #ffb319;
+}
+
+.bubble:nth-of-type(even) > .btn {
+    left: 32%;
+    bottom: 20px;
+}
+
+.bubble:nth-of-type(odd) > .btn {
+    left: 36%;
+    bottom: 20px;
+}
+
+img[class=haibao] {
+    max-width: 96%;
+    /*max-height: 90%;*/
+    border-radius: 2px;
+    object-fit: cover;
+    /*height: 300px;*/
+}
+
+.intro {
+    padding-top: 1rem;
+    width: 90%;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin:0 auto;
+    text-align: left;
+}
+
+.cell-2 {
+   text-align: center;
+}
+
+/*脚部*/
+footer {
+    width: 100%;
+    background: #4d3995;
+}
+
+#footerImg {
+    width: 100%;
+    vertical-align: bottom;
+    margin-bottom: -2px;
+}

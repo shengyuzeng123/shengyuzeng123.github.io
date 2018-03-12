@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+}
+
+img {
+
+}
+
+body {
+    position: relative;
+    background-image: url("../img/bg01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*.master {*/
+/*width: 100%;*/
+/*height: auto;*/
+/*}*/
+
+/*#video {*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 500px;*/
+/*z-index: 99;*/
+/*}*/
+
+#loading {
+    width: 100%;
+    height: 800px;
+    background: #eaeaea;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+#progress_box {
+    width: 80px;
+    height: 80px;
+    /*background: pink;*/
+    margin-top: 260px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #a2a2a2;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    /*width: 100px !important;*/
+}
+
+.content {
+    height: 500px;
+    /*background: pink;*/
+}
+
+.tips {
+    /*display: none;*/
+    margin: 0 auto;
+    width: 90%;
+    /*padding-top: 360px;*/
+}
+
+.btn_box {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn_box > img {
+    width: 24%;
+    margin: 0 10px;
+    object-fit: contain;
+    height: 30%;
+    cursor: pointer;
+}
+
+.qipao {
+    position: relative;
+    width: 100%;
+    padding: 10px 37px;
+    background-image: url("../img/tanchuang2.png");
+    background-size: 100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+/*.qipao {*/
+/*position: relative;*/
+/*background-color: #ececec;*/
+/*width: 200px;*/
+/*!*height: 300px;*!*/
+/*padding: 10px;*/
+/*color: #282828;*/
+/*text-align: center;*/
+/*font-size: 14px;*/
+/*border-radius: 10px;*/
+/*margin: 16px;*/
+/*box-shadow:0px 0px 10px rgba(191, 191, 191, 0.93);*/
+/*}*/
+/*.qipao:before{*/
+/*content:'';*/
+/*position:absolute;*/
+/*width:0;*/
+/*height:0;*/
+/*border:15px solid;*/
+/*border-top-color:#ececec;*/
+/*color:transparent;*/
+/*bottom:-30px;*/
+/*left: 45px;*/
+/*}*/
+.ensure {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    width: 100%;
+}
+
+.intro {
+    margin-bottom: 20px;
+    text-align: left;
+    /*text-indent: 10px;*/
+    color: #e42e21;
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+}
+
+.ensure > a {
+    float: right;
+}
+
+.ensureBtn {
+
+}
+
+.bgImg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    /*object-fit: contain;*/
+}
+
+#bg {
+    position: absolute;
+    width: 100%;
+    z-index: 95;
+    /*display: none;*/
+    top: -10px;
+}
+
+#master02 {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#master02 > div > img {
+    display: inline-block;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+#leap {
+    display: inline-block;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    padding: 4px 6px;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    z-index: 98;
+    cursor: pointer;
+}
+#master_text{
+    padding-top: -2rem;
+    color: #1d1d1d;
+    font-weight: bold;
+}
+#choose{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 45px;
+    top:-52px;
+    z-index: -1;
+}
+#choose>img{
+    display:inline-block;
+    width: 20%;
+    object-fit: contain;
+    margin: 0 20px;
+}

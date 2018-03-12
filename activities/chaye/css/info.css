@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+}
+
+img {
+    object-fit: contain;
+}
+
+body {
+    background-image: url("../img/bg02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 1px;
+}
+
+#video_box {
+    position: relative;
+    display: flex;
+    width: 80%;
+    background: rgba(214, 154, 182, 0.82);
+    margin: auto;
+    margin-top: 70px;
+    border: 4px solid rgba(214, 154, 182, 0.82);
+}
+
+#video_box > video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.poster{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.player{
+    position: absolute;
+    z-index: 12;
+    width: 50px !important;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+}
+.yun {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    bottom: -30px;
+    right: -10px;
+    z-index: 13;
+    height: auto;
+}
+
+#video_box > img {
+    width: 100%;
+}
+
+#content {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    /*background: greenyellow;*/
+    color: #e84532;
+    font-size: 1.3rem;
+}
+
+#msg_box {
+    width: 300px;
+    height: 80px;
+    /*background: yellow;*/
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg_text {
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: -12px;
+}
+
+#msg_img {
+    display: inline-block;
+    width: 64px;
+    margin-left: 1.2rem;
+    /*border: 1px solid rgba(208, 59, 48, 0.79);*/
+    /*border-radius: 2px;*/
+}
+
+.introImg {
+    width: 40%;
+    padding: 1px;
+    display: inline-block;
+    /*height: 100px;*/
+    /*background: green;*/
+    float: left;
+}
+
+.intro {
+    position: relative;
+    display: inline-block;
+    width: 56%;
+    color: #e84532;
+    font-size: 1.8rem;
+    float: right;
+    padding-top: 16px;
+}
+
+.xing {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.introText {
+    word-break: break-all;
+    font-size: 1.2rem;
+    /*line-height: 1rem;*/
+}
+.dianji{
+    font-size: 0.6rem !important;
+}
+.dianji>a{
+    display: inline-block;
+    position: absolute;
+    transform: scale(0.8);
+    margin-bottom:4rem;
+    right: 0.4rem;
+    bottom: -2.6rem;
+}
